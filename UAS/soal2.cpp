@@ -1,29 +1,21 @@
 #include <iostream>
-#include <string>
-
 using namespace std;
-
-int main (){
-	string kd_matkul;
-	string nama_matkul;
+void nama(){
     string nama;
+    cout << "Masukan Nama : ";
+    getline(cin, nama);
+    cout << "Nama : " << nama << endl;
+};
+
+void nim(){
     string nim;
-	
-	cout<<"Masukan Data Berikut : "<<endl<<endl;
-	cout<<"Kode Mata Kuliah  : ";
-	getline (cin, kd_matkul); 
-	 
-	cout<<"Nama Mata Kuliah  : ";
-	getline (cin, nama_matkul); 
+    cout << "Masukan NIM : ";
+    cin>>nim;
+    cout << "NIm : " << nim << endl;
+};
 
-	
-	cout<<endl;
-	cout<<"DATA MATA KULIAH"<<endl; 
-	cout<<"------------------------------"<<endl;
-	
-	cout<<"Kode Mata Kuliah         : "<<kd_matkul<<endl;
-    cout<<"Alamat Kode Mata Kuliah  : "<<&kd_matkul<<endl;
-	cout<<"Nama Mata Kuliah         : "<<nama_matkul<<endl;
-    cout<<"Alamat Nama Mata Kuliah  : "<<&nama_matkul<<endl;
-
+int main(){
+    nama();
+    nim();
+   return 0;
 }
